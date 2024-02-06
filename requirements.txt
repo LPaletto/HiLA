@@ -5,3 +5,5 @@ flair
 numpy
 openpyxl
 scipy
+openai
+time

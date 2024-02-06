@@ -1,3 +1,14 @@
+**Original Readme below!**
+
+# Semantic Label Augmentation for Zero-Shot Hierarchical Classification
+
+## Info
+* Python version 3.8.8
+* Install modules: ```pip install -r requirements.txt```
+
+
+
+
 # Zero-Shot Taxonomy Mapping for Document Classification
 Classification of text according to a custom (hierarchical) taxonomy of categories. Does not need any labelled data or any fine-tuning of the model.
 ![](images/overview.png)

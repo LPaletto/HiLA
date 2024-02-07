@@ -6,4 +6,3 @@ numpy
 openpyxl
 scipy
 openai
-time

@@ -27,6 +27,12 @@ if __name__ == "__main__":
         "-sf", "--savefile", help='file where to save performance results',
         type=str, default='USP-performance_branchwise.txt', required=False
     )
+
+    parser.add_argument(
+        "-bt", "--build_tree", help='build tree from scratch',
+        type=bool, default=False, required=False
+    )
+
     args = parser.parse_args()
 
     savefile = f'{Paths.RESULTS_DIR}/{args.savefile}'
@@ -35,8 +41,11 @@ if __name__ == "__main__":
     encoder = ZeroShooterZSTC(MODEL_NAME)
 
     for name, DataSet in DATASETS.items():
+        if name != args.dataset:
+            continue
+
         msg = f"\n\n---------------------  {name} - {MODEL_NAME} --------------------\n"
-        data = DataSet('test', topn=None)
+        data = DataSet('test', topn=None, build_tree=args.build_tree)
         scorer = PosteriorScoresPropagation(data, encoder)
 
         # Compute Z-STC prior scores and propagate with USP.

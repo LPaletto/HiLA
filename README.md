@@ -56,6 +56,16 @@ python USP_benchmarking.py --dataset='AmazonHTC'
 
 This time the USP computation will show the results from our paper.
 
+### (Optional) Compute the metrics for the chosen dataset
+
+Run the command
+
+```bash
+python density_estimation.py --dataset='AmazonHTC' 
+```
+
+to compute the metrics defined in our paper for every node with children.
+
 ### Original Readme
 The original Readme can be found at [this link](https://github.com/bong-yo/TaxonomyZeroShooter)
 

@@ -41,7 +41,7 @@ Be sure to write build_tree=True as the script needs to create and save the taxo
 Execute HiLA running the command 
 
 ```bash
-python tax_deepening.py --ak --tax_tree
+python tax_deepening.py --key --tax_tree
 ```
 
 where tax_tree is the path to the dataset taxonomy file. The script will overwrite the taxonomy file with the deepened one.

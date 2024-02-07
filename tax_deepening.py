@@ -47,7 +47,7 @@ if __name__ == "__main__":
                     sibli = siblings[i*10:(i+1)*10]
                 
                     elenco = "', '".join(sibli)
-                    print(f'siblings:{sibli}.')
+                    #print(f'siblings:{sibli}.')
                     frase = intro + inizio + intro2 + elenco + fine
                     print(frase)
                     time.sleep(15)

@@ -37,9 +37,8 @@ if __name__ == "__main__":
                 domanda = " these classes? "
                 fine2 = " every class. "
                 
-                inizio = " ".join(new_path) #'"' +padre+ '"'
-                intro = "Books belonging to the genre "
-                intro2 = " can be classified as '"
+                inizio = " ".join(new_path)
+                intro = " Amazon products can be classified as '"
                 fine = "', could you give me some different more specific genres for" +domanda+ "Answer my questions in form of a python dictionary containing a list of new classes for" +fine2+ "Use double quotes for strings. Do not write comments in the code!."
                 
                 n_cicli = int(len(siblings)/10)+1
@@ -48,7 +47,7 @@ if __name__ == "__main__":
                 
                     elenco = "', '".join(sibli)
                     #print(f'siblings:{sibli}.')
-                    frase = intro + inizio + intro2 + elenco + fine
+                    frase = inizio + intro + elenco + fine
                     print(frase)
                     time.sleep(15)
         

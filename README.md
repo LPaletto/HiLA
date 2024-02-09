@@ -33,7 +33,9 @@ datasets
 ```
 
 ### Create an OpenAI account and get your personal api_key
-Register on [**OpenAI website**](https://openai.com/) and create your own personal [KEY](https://platform.openai.com/api-keys) (dimmi se questo link diretto funziona, altrimenti forse devo scrivere che la si trova nella pagina API keys del proprio profilo) to use the OpenAI API.
+Register on [**OpenAI website**](https://openai.com/) and create your own personal [KEY](https://platform.openai.com/api-keys)  to use the OpenAI API. 
+
+FIXME: specify what to do with the API key, should it be stored in some file?
 
 ### Run the basic USP computation
 

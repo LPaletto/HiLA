@@ -33,26 +33,27 @@ datasets
 ```
 
 ### Create an OpenAI account and get your personal api_key
-Register on [**OpenAI website**](https://openai.com/) and create your own personal [KEY](https://platform.openai.com/api-keys)  to use the OpenAI API. 
+Register on [**OpenAI website**](https://openai.com/) and create your own personal [KEY](https://platform.openai.com/api-keys)  to use the OpenAI API. Take note of the API key, you will need it later on.
 
-FIXME: specify what to do with the API key, should it be stored in some file?
 
 ### Run the basic USP computation
 
-Use the command (dimmi se è scritto bene)
+**FIXME**: when you mention USP computation, link it to the repository of the original paper.
+
+Launch the USP computation of the label taxonomy using the command:
 
 ```bash
-python USP_benchmarking.py --dataset='AmazonHTC' --build_tree=True
+python3 USP_benchmarking.py --dataset='AmazonHTC' --build_tree=True
 ```
 
-Be sure to write build_tree=True as the script needs to create and save the taxonomy file for the first time. The script will also perform Zero-Shot Hierarchical classification using USP technique and print the final classification results in tabular form.
+In addition to creating the taxonomy, the script will also perform Zero-Shot Hierarchical classification using USP technique and print the final classification results in tabular form. 
 
 ### Extend the dataset taxonomy using HiLA
 
 Execute HiLA running the command 
 
 ```bash
-python tax_deepening.py --key --tax_tree
+python tax_deepening.py --key <YOUR API KEY> --tax_tree <PATH TO THE tax_tree.json FILE CREATED IN PREVIOUS STEP>
 ```
 
 where tax_tree is the path to the dataset taxonomy file. The script will overwrite the taxonomy file with the deepened one.

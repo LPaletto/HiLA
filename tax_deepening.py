@@ -7,14 +7,14 @@ import argparse
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-tax", "--tax_tree", help='path for the taxonomy file', type=str, default='datastes/', required=True
+        "-t", "--tax", help='path for the taxonomy file', type=str, default='datastes/', required=True
     )
     parser.add_argument(
-        "-key", "--ak", help='your openai api-key', type=int, default=None, required=False
+        "-k", "--key", help='your openai api-key', type=str, default=None, required=True
     )
     args = parser.parse_args()
-    your_api_key = args.ak
-    tax_path = args.tax_tree
+    your_api_key = args.key
+    tax_path = args.tax
 
     openai.api_key = your_api_key
     

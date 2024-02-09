@@ -51,7 +51,7 @@ In addition to creating the taxonomy, which will be saved in the folder `dataset
 Execute the HiLA algorithm to extend the taxonomy, running the command: 
 
 ```bash
-python tax_deepening.py --key <YOUR API KEY> --tax <PATH-TO-TAXONOMY>
+python3 tax_deepening.py --key <YOUR API KEY> --tax <PATH-TO-TAXONOMY>
 ```
 
 where `PATH-TO-TAXONOMY` is the path to the dataset taxonomy file (e.g., `datasets/AmazonHTC/tax_tree.json` in our previous example). The script will overwrite the taxonomy file with the deepened one.
@@ -61,7 +61,7 @@ where `PATH-TO-TAXONOMY` is the path to the dataset taxonomy file (e.g., `datase
 Use the command (dimmi se è scritto bene)
 
 ```bash
-python USP_benchmarking.py --dataset='AmazonHTC' 
+python3 USP_benchmarking.py --dataset='AmazonHTC' 
 ```
 
 This time the USP computation will show the results computed using the new taxonomy, which will match the results in [to be added].
@@ -71,7 +71,7 @@ This time the USP computation will show the results computed using the new taxon
 Run the command
 
 ```bash
-python density_estimation.py --dataset='AmazonHTC' 
+python3 density_estimation.py --dataset='AmazonHTC' 
 ```
 
 to compute the metrics defined in [to be added] for every node with children.

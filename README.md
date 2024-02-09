@@ -38,9 +38,7 @@ Register on [**OpenAI website**](https://openai.com/) and create your own person
 
 ### Run the basic USP computation
 
-**FIXME**: when you mention USP computation, link it to the repository of the original paper.
-
-Launch the USP computation of the label taxonomy. For instance, for the AmazonHTC dataset, use the command:
+Launch the [USP computation](https://github.com/bong-yo/TaxonomyZeroShooter) of the label taxonomy. For instance, for the AmazonHTC dataset, use the command:
 
 ```bash
 python3 USP_benchmarking.py --dataset='AmazonHTC' --build_tree=True
@@ -53,10 +51,10 @@ In addition to creating the taxonomy, which will be saved in the folder `dataset
 Execute the HiLA algorithm to extend the taxonomy, running the command: 
 
 ```bash
-python tax_deepening.py --key <YOUR API KEY> --tax_tree <PATH TO THE tax_tree.json FILE CREATED IN PREVIOUS STEP>
+python tax_deepening.py --key <YOUR API KEY> --tax <PATH-TO-TAXONOMY>
 ```
 
-where tax_tree is the path to the dataset taxonomy file. The script will overwrite the taxonomy file with the deepened one.
+where `PATH-TO-TAXONOMY` is the path to the dataset taxonomy file (e.g., `datasets/AmazonHTC/tax_tree.json` in our previous example). The script will overwrite the taxonomy file with the deepened one.
 
 ### Run the USP computation again
 
@@ -66,7 +64,7 @@ Use the command (dimmi se è scritto bene)
 python USP_benchmarking.py --dataset='AmazonHTC' 
 ```
 
-This time the USP computation will show the results from our paper.
+This time the USP computation will show the results computed using the new taxonomy, which will match the results in [to be added].
 
 ### (Optional) Compute the metrics for the chosen dataset
 
@@ -76,8 +74,5 @@ Run the command
 python density_estimation.py --dataset='AmazonHTC' 
 ```
 
-to compute the metrics defined in our paper for every node with children.
-
-### Original Readme
-The original Readme can be found at [this link](https://github.com/bong-yo/TaxonomyZeroShooter)
+to compute the metrics defined in [to be added] for every node with children.
 

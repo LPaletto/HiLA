@@ -7,21 +7,30 @@
 * Install modules: ```pip install -r requirements.txt```
 
 Please follow these steps in order to reproduce the results obtained in the paper
-### Create the repository for the datasets
 
-Create a repository called
+### Dataset download and preparation
 
-```python
-datasets/
-```
-
-to create the specific folders for the single datasets (as names of the folders please use the ones expected from the original folder). For example, for Amazon dataset create
+Create the data folder that will hold the repository:
 
 ```python
-datasets/AmazonHTC/
+mkdir datasets
 ```
 
-inside which you should copy the dataset files, the links to acces the datasets files are listed in the original repository and in our paper).
+Experiments are based on the following three datasets:
+
+- to be completed with the name of the dataset and the to where they can be downloaded
+-
+-
+
+Each dataset needs to be copied into its own subfolder inside the `datasets` folder. At the ned the structure of subfolders needs to be as it follows: 
+
+```bash
+datasets
+├── AmazonHTC
+├── DBPedia_Extract
+└── WebOfScience
+
+```
 
 ### Create an OpenAI account and get your personal api_key
 Register on [**OpenAI website**](https://openai.com/) and create your own personal [KEY](https://platform.openai.com/api-keys) (dimmi se questo link diretto funziona, altrimenti forse devo scrivere che la si trova nella pagina API keys del proprio profilo) to use the OpenAI API.

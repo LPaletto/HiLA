@@ -1,6 +1,8 @@
-**Original Readme below!**
-
 # Semantic Label Augmentation for Zero-Shot Hierarchical Classification
+
+This work builds upon the research from [TaxonomyZeroShooter](https://github.com/bong-yo/TaxonomyZeroShooter), which utilizes a hierarchical approach to enhance zero-shot classification of textual data. A limitation of the previous technique is its applicability only to the internal nodes of the hierarchy. Our research addresses this limitation by employing a Large Language Model (LLM) to generate an additional hierarchical level. This extension enables improved classification performance at what was previously the final level of the hierarchy.
+
+Details of the work can be found in [to be published]().
 
 ## Info
 * Python version 3.8.8

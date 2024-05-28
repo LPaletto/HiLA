@@ -1,5 +1,5 @@
 # Copyright (c) 2024 Lorenzo Paletto
-# See [LICENCE.md](LICENCE.md)
+# See LICENCE.md
 
 import json
 import time

@@ -1,3 +1,7 @@
+# Copyright (c) 2024 Lorenzo Paletto
+# See LICENCE.md
+
+
 import argparse
 import torch
 import src
